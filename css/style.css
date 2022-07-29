@@ -293,3 +293,100 @@ h2 {
     margin-top: 55px;
 }
 /*benefits-section-ends*/
+/* Pricing-section */
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.pricing__boxes {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    border-radius: 18px;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing__box--basic {
+    --accent-color: var(--color-redish);
+}
+
+.pricing__box--professional {
+    --accent-color: var(--color-primary);
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+    width: 400px;
+    margin: 0 40px;
+}
+
+.pricing__box--premium {
+    --accent-color: var(--color-green);
+}
+
+.pricing__details {
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 60px;
+}
+
+.pricing__type {
+    font-size: 1.25rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing__price {
+    font-size: 2.875rem;
+    font-family: var(--font-open-sans);
+    font-weight: 300;
+    margin-top: 25px;
+    color: var(--accent-color);
+}
+
+.pricing__limited {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-raleway);
+    margin-top: 15px;
+}
+
+.pricing__items {
+    text-align: center;
+}
+
+.pricing__item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark-1.svg");
+}
+
+.pricing__item--not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing__box .btn {
+    background-color: var(--accent-color);
+    position: relative;
+    bottom: -25px;
+}
+/* Pricing-section-ends */
